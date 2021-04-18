@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Paycompute.Persistence.deps.json
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Paycompute.Persistence.dll
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Paycompute.Persistence.pdb
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.dll
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.pdb
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Paycompute.Entity.dll
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Paycompute.Entity.pdb
+C:\Users\Admin\Desktop\Paycompute\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Paycompute.Persistence.csproj.CopyComplete
