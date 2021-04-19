@@ -37,6 +37,7 @@ namespace Paycompute.Entity
         public decimal NIC { get; set; }
         [Column(TypeName = "money")]
         public decimal? UnionFee { get; set; }
+        [Column(TypeName = "money")]
         public Nullable<decimal> SLC { get; set; }
         [Column(TypeName = "money")]
         public decimal TotalEarning { get; set; }
