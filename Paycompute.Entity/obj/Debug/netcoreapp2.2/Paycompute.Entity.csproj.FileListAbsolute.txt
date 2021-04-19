@@ -1,9 +1,0 @@
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.deps.json
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.dll
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\bin\Debug\netcoreapp2.2\Paycompute.Entity.pdb
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.csprojAssemblyReference.cache
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.AssemblyInfoInputs.cache
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.AssemblyInfo.cs
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.dll
-C:\Users\Admin\Desktop\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp2.2\Paycompute.Entity.pdb
