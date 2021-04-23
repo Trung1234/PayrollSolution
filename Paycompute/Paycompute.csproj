@@ -17,4 +17,9 @@
     <ProjectReference Include="..\Paycompute.Services\Paycompute.Services.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\employee\" />
+  </ItemGroup>
+
 </Project>
