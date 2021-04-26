@@ -10,7 +10,7 @@
             <div class="card-body">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb " >
-                        <li class="breadcrumb-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item"><a  asp-controller="Home" asp-action="Index">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Employee List</li>
                     </ol>
                 </nav>
@@ -46,7 +46,7 @@
                                         <td> @employee.Gender</td>
                                         <td> @employee.Designation</td>
                                         <td> @employee.City</td>
-                                        <td> @employee.DateJoined</td>
+                                        <td> @employee.DateJoined.ToString("dd/MM/yyyy")</td>
                                         <td>
                                             <a class="text-primary" asp-action="Edit" asp-route-id="@employee.Id">
                                                 <i class="fas fa-edit"></i> Edit

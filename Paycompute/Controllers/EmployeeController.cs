@@ -73,7 +73,7 @@ namespace Paycompute.Controllers
                 };
                 if (model.ImageUrl != null && model.ImageUrl.Length > 0)
                 {
-                    string uploadDir = @"images/employees";
+                    string uploadDir = @"images/employee";
                     string fileName = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
                     string extension = Path.GetExtension(model.ImageUrl.FileName);
                     string webRootPath = _hostingEnvironment.WebRootPath;
@@ -149,7 +149,7 @@ namespace Paycompute.Controllers
                 employee.Postcode = model.Postcode;
                 if (model.ImageUrl != null && model.ImageUrl.Length > 0)
                 {
-                    string uploadDir = @"images/employees";
+                    string uploadDir = @"images/employee";
                     string fileName = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
                     string extension = Path.GetExtension(model.ImageUrl.FileName);
                     string webRootPath = _hostingEnvironment.WebRootPath;

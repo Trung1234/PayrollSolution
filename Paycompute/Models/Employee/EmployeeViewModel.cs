@@ -27,6 +27,7 @@ namespace Paycompute.Models.Employee
         public DateTime DOB { get; set; }
         [DataType(DataType.Date), Display(Name = "Date Joined")]
         public DateTime DateJoined { get; set; } = DateTime.UtcNow;
+        [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
         [Required(ErrorMessage = "Job Role is required"), StringLength(100)]
         public string Designation { get; set; }
