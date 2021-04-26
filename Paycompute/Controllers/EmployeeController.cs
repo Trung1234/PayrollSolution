@@ -49,6 +49,12 @@ namespace Paycompute.Controllers
         {
             if (ModelState.IsValid)
             {
+                IEnumerable<Employee> employees = _employeeService.GetAll();
+                if (employees.Any(s => s.EmployeeNo.Equals(model.EmployeeNo)))
+                {
+                    ModelState.AddModelError(nameof(model.EmployeeNo), "Employee No is duplicated");
+                    return View();
+                }                    
                 var employee = new Employee
                 {
                     Id = model.Id,
@@ -124,7 +130,7 @@ namespace Paycompute.Controllers
         public async Task<IActionResult> Edit(EmployeeEditViewModel model)
         {
             if (ModelState.IsValid)
-            {
+            {               
                 var employee = _employeeService.GetById(model.Id);
                 if (employee == null)
                 {
