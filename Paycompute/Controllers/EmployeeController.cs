@@ -48,7 +48,7 @@ namespace Paycompute.Controllers
         public async Task<IActionResult> Create(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)
-            {
+            {              
                 IEnumerable<Employee> employees = _employeeService.GetAll();
                 if (employees.Any(s => s.EmployeeNo.Equals(model.EmployeeNo)))
                 {
