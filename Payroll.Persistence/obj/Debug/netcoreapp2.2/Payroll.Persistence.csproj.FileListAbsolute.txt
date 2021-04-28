@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Persistence.deps.json
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Persistence.runtimeconfig.json
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Persistence.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Persistence.dll
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Persistence.pdb
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Entity.dll
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\bin\Debug\netcoreapp2.2\Payroll.Entity.pdb
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.AssemblyInfo.cs
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.csproj.CopyComplete
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.dll
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.pdb
+C:\Users\Admin\Desktop\PayrollSolution\Paycompute.Persistence\obj\Debug\netcoreapp2.2\Payroll.Persistence.genruntimeconfig.cache
