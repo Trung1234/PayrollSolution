@@ -1,4 +1,4 @@
-# Paycompute
+# Payroll Solution
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression
 ## References
