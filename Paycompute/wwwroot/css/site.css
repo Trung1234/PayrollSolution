@@ -33,7 +33,10 @@ button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
-
+img.profile {
+    width: 300px;
+    height: 350px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
