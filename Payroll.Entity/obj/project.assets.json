@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj",
       "projectName": "Payroll.Entity",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,8 +13,8 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Paycompute.Entity\Payroll.Entity.csproj" />
-    <ProjectReference Include="..\Paycompute.Services\Payroll.Services.csproj" />
+    <ProjectReference Include="..\Payroll.Entity\Payroll.Entity.csproj" />
+    <ProjectReference Include="..\Payroll.Services\Payroll.Services.csproj" />
   </ItemGroup>
 
 

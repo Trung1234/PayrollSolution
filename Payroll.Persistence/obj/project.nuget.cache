@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KjYE5NSRMqd7lNMRyVxmRsxPj9fEiaUfb9RR+yR6aiX4xip8GbSDArV/HGkubSlBpKhZvnDAbsAea2u0SCqy/w==",
+  "dgSpecHash": "2b/9O/b9uhfwlebLJgWsyBZ/1ceoIcfxd0dJ6As7z1ySFEp7w1/05aZ9QPq+nAMoByDwZlFd4jEUESusaW7Giw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

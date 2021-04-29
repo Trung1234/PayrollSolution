@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Paycompute.Entity\Payroll.Entity.csproj" />
-    <ProjectReference Include="..\Paycompute.Persistence\Payroll.Persistence.csproj" />
+    <ProjectReference Include="..\Payroll.Entity\Payroll.Entity.csproj" />
+    <ProjectReference Include="..\Payroll.Persistence\Payroll.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

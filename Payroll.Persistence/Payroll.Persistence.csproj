@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Paycompute.Entity\Payroll.Entity.csproj" />
+    <ProjectReference Include="..\Payroll.Entity\Payroll.Entity.csproj" />
   </ItemGroup>
 
 </Project>

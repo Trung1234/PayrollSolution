@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Services\\Payroll.Services.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Services\\Payroll.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj": {
+    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj",
         "projectName": "Payroll.Entity",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj": {
+    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj",
         "projectName": "Payroll.Persistence",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj"
+              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj"
               }
             }
           }
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Services\\Payroll.Services.csproj": {
+    "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Services\\Payroll.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Services\\Payroll.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Services\\Payroll.Services.csproj",
         "projectName": "Payroll.Services",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Services\\Payroll.Services.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Services\\Payroll.Services.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Services\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,11 +159,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Entity\\Payroll.Entity.csproj"
+              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Entity\\Payroll.Entity.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Paycompute.Persistence\\Payroll.Persistence.csproj"
+              "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\PayrollSolution\\Payroll.Persistence\\Payroll.Persistence.csproj"
               }
             }
           }
