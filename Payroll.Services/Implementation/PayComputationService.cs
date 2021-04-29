@@ -3,6 +3,7 @@ using Paycompute.Entity;
 using Paycompute.Persistence;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,11 +12,15 @@ namespace Paycompute.Services.Implementation
     public class PayComputationService : IPayComputationService
     {
         private decimal contractualEarnings;
+        private decimal overtimeHours;
+
         private readonly ApplicationDbContext _context;
+
         public PayComputationService(ApplicationDbContext context)
         {
             _context = context;
         }
+
         public decimal ContractualEarnings(decimal contractualHours, decimal hoursWorked, decimal hourlyRate)
         {
             if(hoursWorked < contractualHours)
@@ -29,59 +34,57 @@ namespace Paycompute.Services.Implementation
             return contractualEarnings;
         }
 
-        public Task CreateAsync(PaymentRecord paymentRecord)
+        public async Task CreateAsync(PaymentRecord paymentRecord)
         {
-            throw new NotImplementedException();
+            await _context.PaymentRecords.AddAsync(paymentRecord);
+            await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<PaymentRecord> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<PaymentRecord> GetAll() => _context.PaymentRecords.OrderBy(s => s.EmployeeId);
 
         public IEnumerable<SelectListItem> GetAllTaxYear()
         {
-            throw new NotImplementedException();
+            return _context.TaxYears.Select(taxYear => new SelectListItem
+            {
+                Text = taxYear.YearOfTax,
+                Value = taxYear.Id.ToString()
+            });
         }
 
-        public PaymentRecord GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+        public PaymentRecord GetById(int id) =>
+            _context.PaymentRecords.FirstOrDefault(s => s.Id == id);
 
         public TaxYear GetTaxYearById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public decimal NetPay(decimal totalEarnings, decimal totalDeduction)
-        {
-            throw new NotImplementedException();
-        }
+        public decimal NetPay(decimal totalEarnings, decimal totalDeduction) =>
+            totalEarnings - totalDeduction;
 
-        public decimal OvertimeEarnings(decimal overtimeRate, decimal overtimeHours)
-        {
-            throw new NotImplementedException();
-        }
+        public decimal OvertimeEarnings(decimal overtimeRate, decimal overtimeHours) =>
+            overtimeHours * overtimeRate;
 
         public decimal OvertimeHours(decimal hoursWorked, decimal contractualHours)
         {
-            throw new NotImplementedException();
+            if(hoursWorked <= contractualHours)
+            {
+                this.overtimeHours = 0.00m;
+            }
+            else 
+            {
+                this.overtimeHours = hoursWorked - contractualHours;
+            }
+            return overtimeHours;
         }
 
-        public decimal OvertimeRate(decimal hourlyRate)
-        {
-            throw new NotImplementedException();
-        }
+        public decimal OvertimeRate(decimal hourlyRate) =>
+            hourlyRate * 1.5m;
 
-        public decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees)
-        {
-            throw new NotImplementedException();
-        }
+        public decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees) 
+            => tax + nic + studentLoanRepayment + unionFees;
 
         public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings)
-        {
-            throw new NotImplementedException();
-        }
+            => overtimeEarnings + contractualEarnings;
     }
 }

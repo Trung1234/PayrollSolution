@@ -11,10 +11,12 @@ namespace Paycompute.Services.Implementation
     public class EmployeeService : IEmployeeService
     {
         private readonly ApplicationDbContext _context;
+
         public EmployeeService(ApplicationDbContext context)
         {
             _context = context;
         }
+
         public async Task CreateAsync(Employee newEmployee)
         {
             await _context.AddAsync(newEmployee);
