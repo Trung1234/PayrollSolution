@@ -77,7 +77,8 @@ namespace Paycompute.Services.Implementation
 
         public decimal UnionFee(int id)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            return employee.UnionMember == UnionMember.Yes ? 10m : 0m;
         }
     }
 }
