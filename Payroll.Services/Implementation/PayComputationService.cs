@@ -54,10 +54,8 @@ namespace Paycompute.Services.Implementation
         public PaymentRecord GetById(int id) =>
             _context.PaymentRecords.FirstOrDefault(s => s.Id == id);
 
-        public TaxYear GetTaxYearById(int id)
-        {
-            throw new NotImplementedException();
-        }
+        public TaxYear GetTaxYearById(int id) =>  
+            _context.TaxYears.FirstOrDefault(s => s.Id == id);
 
         public decimal NetPay(decimal totalEarnings, decimal totalDeduction) =>
             totalEarnings - totalDeduction;
