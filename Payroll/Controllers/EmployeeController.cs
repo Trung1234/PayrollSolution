@@ -53,14 +53,17 @@ namespace Paycompute.Controllers
         [ValidateAntiForgeryToken]// Prevent cross-site Request Forgery Attacks
         public async Task<IActionResult> Create(EmployeeCreateViewModel model)
         {
-            if (ModelState.IsValid)
-            {              
+            if (!string.IsNullOrWhiteSpace(model.EmployeeNo))
+            {
                 IEnumerable<Employee> employees = _employeeService.GetAll();
                 if (employees.Any(s => s.EmployeeNo.Equals(model.EmployeeNo)))
                 {
                     ModelState.AddModelError(nameof(model.EmployeeNo), "Employee No is duplicated");
                     return View();
-                }                    
+                }
+            }
+            if (ModelState.IsValid)
+            {                                                
                 var employee = new Employee
                 {
                     Id = model.Id,
@@ -96,9 +99,8 @@ namespace Paycompute.Controllers
                 }
                 await _employeeService.CreateAsync(employee);
                 return Json(new { isValid = true , message = Constants.CreateEmployeeSuccess});
-               // return RedirectToAction(nameof(Index));
             }
-            return Json(new { isValid = true, errors = GetErrorsFromModelState() });
+            return Json(new { isValid = false, errors = GetErrorsFromModelState() });
         }
 
         public IActionResult Edit(int id)
