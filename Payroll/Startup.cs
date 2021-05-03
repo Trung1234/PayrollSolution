@@ -37,7 +37,11 @@ namespace Paycompute
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddScoped<IEmployeeService, EmployeeService>();
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("https://localhost:44319/"));
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
