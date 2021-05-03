@@ -236,10 +236,9 @@ namespace Paycompute.Controllers
         //}
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public JsonResult Delete(string id)
+        public async Task<JsonResult> DeleteEmployee(EmployeeDeleteViewModel model)
         {
-            //await _employeeService.DeleteAsync(Convert.ToInt32(id));
+            await _employeeService.DeleteAsync(model.Id);
             return Json(new { message = Constants.DeleteEmployeeSuccess });
         }
     }

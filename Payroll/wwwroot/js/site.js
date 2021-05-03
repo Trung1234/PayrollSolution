@@ -68,12 +68,16 @@ function showDeletePopup(emplId) {
 function deleteEmployee(emplId) {
     $('.modal-body').empty();
     $("#form-modal").modal('hide');
+    var formData = new FormData();
+    formData.append("Id", emplId );
     try {
         $.ajax({
             type: "POST",
-            url: "Employee/Delete",
-            data: { id: emplId  },
-            dataType: "text",
+            url: "Employee/DeleteEmployee",
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
             success: function (res) {
                 $('#form-modal').modal('toggle');
                 $('#modalLabel').text('Delete');
