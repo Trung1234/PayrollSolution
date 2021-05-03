@@ -16,7 +16,7 @@
                     </ol>
                 </nav>
                 <nav><br /></nav>
-                <form method="post" enctype='multipart/form-data' asp-action="Create">
+                <form method="post" enctype='multipart/form-data'  onsubmit="return CreateNewEmployee(this);">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-row">
                         <div class="form-group col-md-2">

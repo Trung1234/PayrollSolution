@@ -5,19 +5,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Paycompute.Entity;
 using Paycompute.Models.Employee;
 using Paycompute.Services;
+using Payroll.Controllers.Base;
+using Payroll.Utility;
 
 namespace Paycompute.Controllers
 {
-    public class EmployeeController : Controller
+    public class EmployeeController : BaseController
     {
         private readonly IEmployeeService _employeeService;
+        private readonly ICompositeViewEngine _viewEngine;
         private readonly HostingEnvironment _hostingEnvironment;
-        public EmployeeController(IEmployeeService employeeService, HostingEnvironment hostingEnvironment)
+
+        public EmployeeController(IEmployeeService employeeService, HostingEnvironment hostingEnvironment, ICompositeViewEngine viewEngine)
         {
             _employeeService = employeeService;
+            _viewEngine = viewEngine; ;
             _hostingEnvironment = hostingEnvironment;
         }
 
@@ -89,9 +95,10 @@ namespace Paycompute.Controllers
                     await model.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));                  
                 }
                 await _employeeService.CreateAsync(employee);
-                return RedirectToAction(nameof(Index));
+                return Json(new { isValid = true , message = Constants.CreateEmployeeSuccess});
+               // return RedirectToAction(nameof(Index));
             }
-            return View();
+            return Json(new { isValid = true, errors = GetErrorsFromModelState() });
         }
 
         public IActionResult Edit(int id)
