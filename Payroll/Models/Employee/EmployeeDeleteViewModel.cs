@@ -8,6 +8,7 @@ namespace Paycompute.Models.Employee
     public class EmployeeDeleteViewModel
     {
         public int Id { get; set; }
+        public string EmployeeNo { get; set; }
         public string FullName { get; set; }
     }
 }

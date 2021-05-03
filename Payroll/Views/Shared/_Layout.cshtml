@@ -55,11 +55,11 @@
                         <div class="collapse" id="Payroll">
                             <ul class="nav flex-column sub-menu">
                                 @*<li class="nav-item"><a class="nav-link" asp-controller="Pay" asp-action="Create"> New Pay</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Pay" asp-action="Index"> Payment Records</a></li>*@
+                                    <li class="nav-item"><a class="nav-link" asp-controller="Pay" asp-action="Index"> Payment Records</a></li>*@
                             </ul>
                         </div>
                     </li>
-                </ul>               
+                </ul>
             </nav>
             <div class="main-panel">
                 @*<partial name="_CookieConsentPartial" />*@
@@ -71,7 +71,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="modalLabel">Modal title</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -91,10 +91,10 @@
                     </div>
                 </footer>
             </div>
-        </div>            
+        </div>
     </div>
 
-   
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -115,7 +115,6 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
     @RenderSection("Scripts", required: false)
 </body>
 </html>

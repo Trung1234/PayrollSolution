@@ -16,10 +16,9 @@ namespace Payroll.Controllers.Base
         /// <param name="viewName"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        public string RenderPartialViewToString(ICompositeViewEngine viewEngine, string viewName, object model)
+        public string RenderPartialViewToString(ICompositeViewEngine viewEngine, string viewName)
         {
             viewName = viewName ?? ControllerContext.ActionDescriptor.ActionName;
-            ViewData.Model = model;
             using (StringWriter sw = new StringWriter())
             {
                 IView view = viewEngine.FindView(ControllerContext, viewName, false).View;

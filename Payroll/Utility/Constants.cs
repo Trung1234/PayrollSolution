@@ -8,5 +8,6 @@ namespace Payroll.Utility
     public class Constants
     {
         public const string CreateEmployeeSuccess = "Create new employee successfully.";
+        public const string DeleteEmployeeSuccess = "Delete new employee successfully.";
     }
 }

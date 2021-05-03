@@ -211,7 +211,7 @@ namespace Paycompute.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int id)
+        public IActionResult ShowDeletePopup(int id)
         {
             var employee = _employeeService.GetById(id);
             if (employee == null)
@@ -221,17 +221,26 @@ namespace Paycompute.Controllers
             var model = new EmployeeDeleteViewModel()
             {
                 Id = employee.Id,
+                EmployeeNo = employee.EmployeeNo,
                 FullName = employee.FullName
             };
-            return View(model);
+            return Json(new {model = model, view = RenderPartialViewToString(_viewEngine, "_Delete") });
         }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<JsonResult> Delete(string id)
+        //{
+        //    await _employeeService.DeleteAsync(Convert.ToInt32(id));
+        //    return Json(new {  message = Constants.DeleteEmployeeSuccess });
+        //}
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(EmployeeDeleteViewModel model)
+        public JsonResult Delete(string id)
         {
-            await _employeeService.DeleteAsync(model.Id);
-            return RedirectToAction(nameof(Index));
+            //await _employeeService.DeleteAsync(Convert.ToInt32(id));
+            return Json(new { message = Constants.DeleteEmployeeSuccess });
         }
     }
 }

@@ -1,6 +1,6 @@
 # Payroll Solution
 MVC Web Application  using .NET Core 2.2
- - Server-Side Validation using Regular Expression
+ - Server-Side Validation using Regular Expression, Ajax, Jquery
  - Implement multi-layered architecture and their dependencies on each other
 ## References
 - https://www.c-sharpcorner.com/article/managing-data-with-viewmodel-in-asp-net-mvc/
