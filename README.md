@@ -8,4 +8,5 @@ MVC Web Application  using .NET Core 2.2
 - https://techmaster.vn/posts/36427/quy-uoc-dat-ten-css-theo-chuan-bem
 - https://www.c-sharpcorner.com/blogs/preventing-cross-site-request-forgery-in-mvc
 - https://www.codaffection.com/asp-net-core-article/jquery-ajax-crud-in-asp-net-core-mvc/
+- https://gist.github.com/tanveery/94260e1eeace704797f7#file-homecontroller-cs-L30
 - https://www.codeproject.com/Articles/216439/Data-Validation-Using-Annotations-for-jQuery-Ajax
