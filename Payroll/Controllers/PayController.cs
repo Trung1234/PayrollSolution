@@ -75,12 +75,13 @@ namespace Payroll.Controllers
                 decimal studentLoan;
                 decimal nationalInsurance;
                 decimal totalDeduction;
+                Employee employee = _employeeService.GetById(model.EmployeeId);
                 var payrecord = new PaymentRecord()
                 {
                     Id = model.Id,
                     EmployeeId = model.EmployeeId,
-                    FullName = _employeeService.GetById(model.EmployeeId).FullName,
-                    NiNo = _employeeService.GetById(model.EmployeeId).NationalInsuranceNo,
+                    FullName = employee != null? employee.FullName:"",
+                    NiNo = employee != null ? employee.NationalInsuranceNo : "",
                     PayDate = model.PayDate,
                     PayMonth = model.PayMonth,
                     TaxYearId = model.TaxYearId,
