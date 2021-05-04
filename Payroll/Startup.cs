@@ -37,6 +37,7 @@ namespace Paycompute
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IPayComputationService, PayComputationService>();
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
@@ -56,12 +57,11 @@ namespace Paycompute
                 app.UseDeveloperExceptionPage();
             }
             else
-            {
-                app.UseExceptionHandler("/Home/Error");
+            {                
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseExceptionHandler("/Home/Error");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

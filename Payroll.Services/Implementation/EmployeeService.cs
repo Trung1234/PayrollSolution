@@ -1,4 +1,5 @@
-﻿using Paycompute.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Paycompute.Entity;
 using Paycompute.Persistence;
 using System;
 using System.Collections.Generic;
@@ -78,6 +79,21 @@ namespace Paycompute.Services.Implementation
         public decimal UnionFee(int id)
         {
             var employee = GetById(id);
+            return employee.UnionMember == UnionMember.Yes ? 10m : 0m;
+        }
+
+        public IEnumerable<SelectListItem> GetAllEmployeesForPayroll()
+        {
+            return GetAll().Select(emp => new SelectListItem()
+            {
+                Text = emp.FullName,
+                Value = emp.Id.ToString()
+            });
+        }
+
+        public decimal UnionFees(int employeeId)
+        {
+            var employee = GetById(employeeId);
             return employee.UnionMember == UnionMember.Yes ? 10m : 0m;
         }
     }
