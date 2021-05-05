@@ -2,9 +2,9 @@
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression, Ajax, Jquery
  - Implement multi-layered architecture and their dependencies on each other
-To run web
- + Change DefaultConnection to your Connection Strings
- + For database migration , we need to follow the following steps.
+# To run web
+ - Change DefaultConnection to your Connection Strings
+ - For database migration , we need to follow the following steps.
 	- Tools -> NuGet Package Manager -> Package Manager Console -> change Default Project: Payroll.Persistence.
 	- Run PM> Add-Migration MyFirstMigration to scaffold a migration to create the initial set of tables for our model. 	
 	- Run PM> Update-Database to apply the new migration to the database. 
