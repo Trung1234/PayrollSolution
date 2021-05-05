@@ -22,11 +22,15 @@ namespace Payroll.Models.Payment
         public decimal HoursWorked { get; set; }
         [Display(Name = "Contractual Hours")]
         public decimal ContractualHours { get; set; } = 144m;
+        [Display(Name = "Overtime Hours")]
         public decimal OvertimeHours { get; set; }
+        [Display(Name = "Contractual Earnings")]
         public decimal ContractualEarnings { get; set; }
+        [Display(Name = "Overtime Earnings")]
         public decimal OvertimeEarnings { get; set; }
         public decimal Tax { get; set; }
         public decimal NIC { get; set; }
+        [Display(Name = "Union Fee")]
         public decimal? UnionFee { get; set; }
         public Nullable<decimal> SLC { get; set; }
     }

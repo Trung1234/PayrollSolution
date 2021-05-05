@@ -21,7 +21,7 @@ namespace Payroll.Models.Payment
         public decimal TotalEarnings { get; set; }
         [Display(Name = "Total Deductions")]
         public decimal TotalDeduction { get; set; }
-        [Display(Name = "Net")]
+        [Display(Name = "Net Payment")]
         public decimal NetPayment { get; set; }
     }
 }
