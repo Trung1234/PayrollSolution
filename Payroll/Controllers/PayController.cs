@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
-using Paycompute.Entity;
-using Paycompute.Services;
+using Payroll.Entity;
+using Payroll.Services;
 using Payroll.Controllers.Base;
 using Payroll.Models.Payment;
-using Payroll.Services;
 
 namespace Payroll.Controllers
 {

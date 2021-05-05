@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Paycompute.Entity;
+using Payroll.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Paycompute.Services
+namespace Payroll.Services
 {
     public interface IEmployeeService
     {

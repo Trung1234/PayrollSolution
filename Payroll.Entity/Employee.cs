@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
-namespace Paycompute.Entity
+namespace Payroll.Entity
 {
     public class Employee
     {

@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Paycompute.Ultility
+namespace Payroll.Ultility
 {
     public class AllowedExtensionsAttribute : ValidationAttribute
     {

@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Paycompute.Entity;
-using Paycompute.Persistence;
+using Payroll.Entity;
+using Payroll.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Paycompute.Services.Implementation
+namespace Payroll.Services.Implementation
 {
     public class PayComputationService : IPayComputationService
     {

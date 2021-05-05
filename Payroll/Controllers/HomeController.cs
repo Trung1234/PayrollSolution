@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Paycompute.Models;
+using Payroll.Models;
 
-namespace Paycompute.Controllers
+namespace Payroll.Controllers
 {
     public class HomeController : Controller
     {

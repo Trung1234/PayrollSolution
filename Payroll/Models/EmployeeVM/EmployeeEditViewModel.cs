@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Paycompute.Ultility;
+using Payroll.Ultility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Paycompute.Models.Employee
+namespace Payroll.Models.EmployeeVM
 {
     public class EmployeeEditViewModel : EmployeeViewModel
     {

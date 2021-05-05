@@ -1,4 +1,4 @@
-﻿namespace Paycompute.Entity
+﻿namespace Payroll.Entity
 {
     public enum PaymentMethod
     {

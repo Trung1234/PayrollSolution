@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
-using Paycompute.Entity;
-using Paycompute.Models.Employee;
-using Paycompute.Services;
+using Payroll.Entity;
+using Payroll.Services;
 using Payroll.Controllers.Base;
 using Payroll.Utility;
+using Payroll.Models.EmployeeVM;
 
-namespace Paycompute.Controllers
+namespace Payroll.Controllers
 {
     public class EmployeeController : BaseController
     {

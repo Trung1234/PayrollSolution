@@ -1,4 +1,4 @@
-﻿using Paycompute.Entity;
+﻿using Payroll.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

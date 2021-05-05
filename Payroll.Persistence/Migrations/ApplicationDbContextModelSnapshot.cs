@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Paycompute.Persistence;
+using Payroll.Persistence;
 
-namespace Paycompute.Persistence.Migrations
+namespace Payroll.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -184,7 +184,7 @@ namespace Paycompute.Persistence.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Paycompute.Entity.Employee", b =>
+            modelBuilder.Entity("Payroll.Entity.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -243,7 +243,7 @@ namespace Paycompute.Persistence.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("Paycompute.Entity.PaymentRecord", b =>
+            modelBuilder.Entity("Payroll.Entity.PaymentRecord", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -312,7 +312,7 @@ namespace Paycompute.Persistence.Migrations
                     b.ToTable("PaymentRecords");
                 });
 
-            modelBuilder.Entity("Paycompute.Entity.TaxYear", b =>
+            modelBuilder.Entity("Payroll.Entity.TaxYear", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -370,14 +370,14 @@ namespace Paycompute.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Paycompute.Entity.PaymentRecord", b =>
+            modelBuilder.Entity("Payroll.Entity.PaymentRecord", b =>
                 {
-                    b.HasOne("Paycompute.Entity.Employee", "Employee")
+                    b.HasOne("Payroll.Entity.Employee", "Employee")
                         .WithMany("PaymentRecords")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Paycompute.Entity.TaxYear", "TaxYear")
+                    b.HasOne("Payroll.Entity.TaxYear", "TaxYear")
                         .WithMany()
                         .HasForeignKey("TaxYearId")
                         .OnDelete(DeleteBehavior.Cascade);

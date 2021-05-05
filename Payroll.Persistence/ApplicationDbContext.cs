@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Paycompute.Entity;
+using Payroll.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Paycompute.Persistence
+namespace Payroll.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext
     {

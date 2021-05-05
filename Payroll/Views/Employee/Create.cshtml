@@ -1,4 +1,4 @@
-﻿@model Paycompute.Models.Employee.EmployeeCreateViewModel
+﻿@model Payroll.Models.Employee.EmployeeCreateViewModel
 
 @{
     ViewBag.Title = "Create Employee";
@@ -103,7 +103,7 @@
                             <label asp-for="PaymentMethod"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="PaymentMethod" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.PaymentMethod>()"></select>
+                            <select asp-for="PaymentMethod" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.PaymentMethod>()"></select>
                         </div>
                     </div>
                     <div class="form-row">
@@ -111,14 +111,14 @@
                             <label asp-for="StudentLoan"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.StudentLoan>()"></select>
+                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.StudentLoan>()"></select>
                         </div>
                         <div class="col-md-2"></div>
                         <div class="form-group col-md-2">
                             <label asp-for="UnionMember"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="UnionMember" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.UnionMember>()"></select>
+                            <select asp-for="UnionMember" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.UnionMember>()"></select>
                         </div>
                     </div>
                     <div class="form-row">

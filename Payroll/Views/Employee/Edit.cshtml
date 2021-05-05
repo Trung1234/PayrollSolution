@@ -1,4 +1,4 @@
-﻿@model Paycompute.Models.Employee.EmployeeEditViewModel
+﻿@model Payroll.Models.EmployeeVM.EmployeeEditViewModel
 
 @{
     ViewBag.Title = "Edit Employee";
@@ -105,7 +105,7 @@
                             <label asp-for="PaymentMethod"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="PaymentMethod" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.PaymentMethod>()"></select>
+                            <select asp-for="PaymentMethod" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.PaymentMethod>()"></select>
                             <span asp-validation-for="PaymentMethod" class="text-danger"></span>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                             <label asp-for="StudentLoan"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.StudentLoan>()"></select>
+                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.StudentLoan>()"></select>
                             <span asp-validation-for="StudentLoan" class="text-danger"></span>
                         </div>
                         <div class="col-md-2"></div>
@@ -122,7 +122,7 @@
                             <label asp-for="UnionMember"></label>
                         </div>
                         <div class="form-group col-md-3">
-                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Paycompute.Entity.UnionMember>()"></select>
+                            <select asp-for="StudentLoan" class="form-control" asp-items="Html.GetEnumSelectList<Payroll.Entity.UnionMember>()"></select>
                             <span asp-validation-for="UnionMember" class="text-danger"></span>
                         </div>
                     </div>

@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Paycompute.Persistence;
-using Paycompute.Services;
-using Paycompute.Services.Implementation;
+using Payroll.Persistence;
+using Payroll.Services;
+using Payroll.Services.Implementation;
 
 namespace Paycompute
 {

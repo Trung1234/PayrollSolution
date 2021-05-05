@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Paycompute.Entity
+namespace Payroll.Entity
 {
     public class PaymentRecord
     {

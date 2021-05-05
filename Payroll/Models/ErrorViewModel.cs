@@ -1,6 +1,6 @@
 using System;
 
-namespace Paycompute.Models
+namespace Payroll.Models
 {
     public class ErrorViewModel
     {

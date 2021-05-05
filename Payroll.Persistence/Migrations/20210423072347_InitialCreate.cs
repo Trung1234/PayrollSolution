@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Paycompute.Persistence.Migrations
+namespace Payroll.Persistence.Migrations
 {
     public partial class InitialCreate : Migration
     {
