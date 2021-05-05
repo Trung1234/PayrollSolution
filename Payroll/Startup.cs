@@ -38,6 +38,8 @@ namespace Paycompute
             });
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IPayComputationService, PayComputationService>();
+            services.AddScoped<INationalInsuranceContributionService, NationalInsuranceContributionService>();
+            services.AddScoped<ITaxService, TaxService>();
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",

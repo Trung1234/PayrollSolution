@@ -10,8 +10,8 @@ using Payroll.Persistence;
 namespace Payroll.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210423072347_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210505023235_MyFirstMigration")]
+    partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -255,18 +255,18 @@ namespace Payroll.Persistence.Migrations
                         .HasColumnType("money");
 
                     b.Property<decimal>("ContractualHours")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<int>("EmployeeId");
 
-                    b.Property<string>("Fullname")
-                        .HasMaxLength(10);
+                    b.Property<string>("FullName")
+                        .HasMaxLength(100);
 
                     b.Property<decimal>("HourlyRate")
                         .HasColumnType("money");
 
                     b.Property<decimal>("HoursWorked")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<decimal>("NIC")
                         .HasColumnType("money");
@@ -280,7 +280,7 @@ namespace Payroll.Persistence.Migrations
                         .HasColumnType("money");
 
                     b.Property<decimal>("OvertimeHours")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<DateTime>("PayDate");
 
@@ -299,7 +299,7 @@ namespace Payroll.Persistence.Migrations
                     b.Property<decimal>("TotalDeduction")
                         .HasColumnType("money");
 
-                    b.Property<decimal>("TotalEarning")
+                    b.Property<decimal>("TotalEarnings")
                         .HasColumnType("money");
 
                     b.Property<decimal?>("UnionFee")

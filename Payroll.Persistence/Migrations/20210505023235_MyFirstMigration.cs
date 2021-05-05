@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Payroll.Persistence.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class MyFirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -204,23 +204,23 @@ namespace Payroll.Persistence.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     EmployeeId = table.Column<int>(nullable: false),
-                    Fullname = table.Column<string>(maxLength: 10, nullable: true),
+                    FullName = table.Column<string>(maxLength: 100, nullable: true),
                     NiNo = table.Column<string>(nullable: true),
                     PayDate = table.Column<DateTime>(nullable: false),
                     PayMonth = table.Column<string>(nullable: true),
                     TaxYearId = table.Column<int>(nullable: false),
                     TaxCode = table.Column<string>(nullable: true),
                     HourlyRate = table.Column<decimal>(type: "money", nullable: false),
-                    HoursWorked = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ContractualHours = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    OvertimeHours = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    HoursWorked = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    ContractualHours = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    OvertimeHours = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
                     ContractualEarnings = table.Column<decimal>(type: "money", nullable: false),
                     OvertimeEarnings = table.Column<decimal>(type: "money", nullable: false),
                     Tax = table.Column<decimal>(type: "money", nullable: false),
                     NIC = table.Column<decimal>(type: "money", nullable: false),
                     UnionFee = table.Column<decimal>(type: "money", nullable: true),
                     SLC = table.Column<decimal>(type: "money", nullable: true),
-                    TotalEarning = table.Column<decimal>(type: "money", nullable: false),
+                    TotalEarnings = table.Column<decimal>(type: "money", nullable: false),
                     TotalDeduction = table.Column<decimal>(type: "money", nullable: false),
                     NetPayment = table.Column<decimal>(type: "money", nullable: false)
                 },
