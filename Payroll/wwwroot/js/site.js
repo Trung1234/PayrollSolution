@@ -1,7 +1,7 @@
-﻿$(".text-danger").text("");
+﻿$(".span-error").text("");
 CreateNewEmployee = form => {
     $('.modal-body').empty();
-    $(".text-danger").text("");
+    $(".span-error").text("");
     try {
         $.ajax({
             type: 'POST',

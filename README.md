@@ -1,7 +1,7 @@
 # Payroll Solution
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression, Ajax, Jquery
- - Implement multi-layered architecture and their dependencies on each other
+ - Implement multi-layered architecture and their dependencies on each other using Dependency Injection
 # To run web
  - Change DefaultConnection to your Connection Strings
  - For database migration , we need to follow the following steps.
@@ -12,6 +12,7 @@ MVC Web Application  using .NET Core 2.2
 ## References
 - https://www.c-sharpcorner.com/article/managing-data-with-viewmodel-in-asp-net-mvc/
 - https://www.c-sharpcorner.com/UploadFile/3d39b4/Asp-Net-mvc-server-side-validation/
+- https://hoc5.blogspot.com/2017/07/phan-biet-viewbag-viewdata-tempdata.html
 - https://techmaster.vn/posts/36427/quy-uoc-dat-ten-css-theo-chuan-bem
 - https://www.c-sharpcorner.com/blogs/preventing-cross-site-request-forgery-in-mvc
 - https://www.codaffection.com/asp-net-core-article/jquery-ajax-crud-in-asp-net-core-mvc/
