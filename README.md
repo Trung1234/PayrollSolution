@@ -2,6 +2,21 @@
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression, Ajax, Jquery
  - Implement multi-layered architecture and their dependencies on each other 
+ - Creating PDF using RotativaCore version 2.2
+      -  ### Copy folder WkHtmlToPdf to Payroll 
+      -  ### Copy to Payroll.csproj
+			 <details>
+				<summary>Click to expand</summary>
+
+				   <ItemGroup>
+						<None Update="WkHtmlToPdf\wkhtmltoimage.exe">
+						  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+						</None>
+						<None Update="WkHtmlToPdf\wkhtmltopdf.exe">
+						  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+						</None>
+				  </ItemGroup
+			</details>  
 # To run web
  - Change DefaultConnection to your Connection Strings
  - For database migration , we need to follow the following steps.
@@ -14,6 +29,7 @@ MVC Web Application  using .NET Core 2.2
 - https://www.c-sharpcorner.com/UploadFile/3d39b4/Asp-Net-mvc-server-side-validation/
 - https://hoc5.blogspot.com/2017/07/phan-biet-viewbag-viewdata-tempdata.html
 - https://techmaster.vn/posts/36427/quy-uoc-dat-ten-css-theo-chuan-bem
+- https://www.c-sharpcorner.com/article/creating-pdf-in-asp-net-core-mvc-using-rotativa-aspnetcore/
 - https://www.c-sharpcorner.com/blogs/preventing-cross-site-request-forgery-in-mvc
 - https://www.codaffection.com/asp-net-core-article/jquery-ajax-crud-in-asp-net-core-mvc/
 - https://gist.github.com/tanveery/94260e1eeace704797f7#file-homecontroller-cs-L30

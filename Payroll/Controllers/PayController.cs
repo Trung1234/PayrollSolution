@@ -9,6 +9,7 @@ using Payroll.Services;
 using Payroll.Controllers.Base;
 using Payroll.Models.Payment;
 using Microsoft.AspNetCore.Authorization;
+using RotativaCore;
 
 namespace Payroll.Controllers
 {
@@ -186,6 +187,15 @@ namespace Payroll.Controllers
                 NetPayment = paymentRecord.NetPayment
             };
             return View(model);
+        }
+
+        public IActionResult GeneratePayslipPdf(int id)
+        {
+            var payslip = new ActionAsPdf("Payslip", new { id = id })
+            {
+                FileName = "payslip.pdf"
+            };
+            return payslip;
         }
     }
 }
