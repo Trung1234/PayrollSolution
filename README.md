@@ -1,7 +1,7 @@
 # Payroll Solution
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression, Ajax, Jquery
- - Implement multi-layered architecture and their dependencies on each other using Dependency Injection
+ - Implement multi-layered architecture and their dependencies on each other 
 # To run web
  - Change DefaultConnection to your Connection Strings
  - For database migration , we need to follow the following steps.
