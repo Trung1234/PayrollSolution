@@ -11,8 +11,7 @@ MVC Web Application  using .NET Core 2.2
 				</None>
 				<None Update="WkHtmlToPdf\wkhtmltopdf.exe">
 					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-				</None>
-			</ItemGroup  
+				</None></ItemGroup  
 # To run web
  - Change DefaultConnection to your Connection Strings
  - For database migration , we need to follow the following steps.
