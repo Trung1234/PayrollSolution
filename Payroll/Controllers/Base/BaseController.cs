@@ -9,6 +9,7 @@ namespace Payroll.Controllers.Base
 {
     public class BaseController : Controller
     {
+
         /// <summary>
         /// this method helps to render a partial view into html string.
         /// </summary>
@@ -27,6 +28,7 @@ namespace Payroll.Controllers.Base
                 return sw.GetStringBuilder().ToString();
             }
         }
+
         /// <summary>
         /// This method helps to get the error information from the MVC "ModelState".
         /// </summary>
