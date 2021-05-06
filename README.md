@@ -4,8 +4,8 @@ MVC Web Application  using .NET Core 2.2
  - Implement multi-layered architecture and their dependencies on each other 
  - Use ICompositeViewEngine to render PartialView to string and add in PopUp
  - Creating PDF using RotativaCore version 2.2
-      -  ### Copy folder WkHtmlToPdf to Payroll 
-      -  ### Copy to Payroll.csproj
+      -  Copy folder WkHtmlToPdf to Payroll 
+      -  Copy to Payroll.csproj
 			 <ItemGroup>
 				<None Update="WkHtmlToPdf\wkhtmltoimage.exe">
 					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
