@@ -6,7 +6,7 @@ MVC Web Application  using .NET Core 2.2
  - Use ICompositeViewEngine to render PartialView to string and add in PopUp
  - Creating PDF using RotativaCore version 2.2
       -  Copy folder WkHtmlToPdf to Payroll 
-      -  Copy to section ItemGroup of WkHtmlToPdf Payroll.csproj 	 	
+      -  Copy to section ItemGroup of WkHtmlToPdf to Payroll.csproj 	 	
 	
 # To run web
  - Change DefaultConnection to your Connection Strings
