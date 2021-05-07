@@ -19,22 +19,19 @@ namespace Payroll.Controllers
         private readonly IEmployeeService _employeeService;
         private readonly ITaxService _taxService;
         private readonly INationalInsuranceContributionService _nationalInsuranceContributionService;
-        private readonly ICompositeViewEngine _viewEngine;
 
         public PayController(IPayComputationService payComputationService,
                             IEmployeeService employeeService,
                             ITaxService taxService,
                             INationalInsuranceContributionService nationalInsuranceContributionService, 
-                            ICompositeViewEngine viewEngine)
+                            ICompositeViewEngine viewEngine) : base(viewEngine)
         {
             _payComputationService = payComputationService;
             _employeeService = employeeService;
             _taxService = taxService;
             _nationalInsuranceContributionService = nationalInsuranceContributionService;
-            _viewEngine = viewEngine;
         }
-
-        public IActionResult Index()
+        public override IActionResult Index()
         {
             var payRecords = _payComputationService.GetAll().Select(pay => new PaymentRecordIndexViewModel
             {
@@ -53,7 +50,8 @@ namespace Payroll.Controllers
             return View(payRecords);
         }
 
-        public IActionResult Create()
+        [HttpGet]
+        public override IActionResult Create()
         {
             ViewBag.employees = _employeeService.GetAllEmployeesForPayroll();
             ViewBag.taxYears = _payComputationService.GetAllTaxYear();
@@ -109,7 +107,7 @@ namespace Payroll.Controllers
             return View();
         }
 
-        public IActionResult Detail(int id)
+        public override IActionResult Detail(int id)
         {
             var paymentRecord = _payComputationService.GetById(id);
             if (paymentRecord == null)

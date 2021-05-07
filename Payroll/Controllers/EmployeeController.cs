@@ -17,17 +17,17 @@ namespace Payroll.Controllers
     public class EmployeeController : BaseController
     {
         private readonly IEmployeeService _employeeService;
-        private readonly ICompositeViewEngine _viewEngine;
         private readonly HostingEnvironment _hostingEnvironment;
 
-        public EmployeeController(IEmployeeService employeeService, HostingEnvironment hostingEnvironment, ICompositeViewEngine viewEngine)
+        public EmployeeController(IEmployeeService employeeService, 
+            HostingEnvironment hostingEnvironment,
+            ICompositeViewEngine viewEngine) : base(viewEngine)
         {
             _employeeService = employeeService;
-            _viewEngine = viewEngine; ;
             _hostingEnvironment = hostingEnvironment;
         }
 
-        public IActionResult Index()
+        public override IActionResult Index()
         {
             List<EmployeeDisplayViewModel> employees = _employeeService.GetAll().Select(employee => new EmployeeDisplayViewModel
             {
@@ -44,7 +44,7 @@ namespace Payroll.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public override IActionResult Create()
         {
             return View(new EmployeeCreateViewModel());
         }
@@ -180,7 +180,7 @@ namespace Payroll.Controllers
         }
 
         [HttpGet]
-        public IActionResult Detail(int id)
+        public override IActionResult Detail(int id)
         {
             var employee = _employeeService.GetById(id);
             if (employee == null)
@@ -224,7 +224,7 @@ namespace Payroll.Controllers
                 EmployeeNo = employee.EmployeeNo,
                 FullName = employee.FullName
             };
-            return Json(new {model = model, view = RenderPartialViewToString(_viewEngine, "_Delete") });
+            return Json(new {model = model, view = RenderPartialViewToString("_Delete") });
         }
 
         //[HttpPost]

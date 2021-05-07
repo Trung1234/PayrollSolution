@@ -7,8 +7,36 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace Payroll.Controllers.Base
 {
-    public class BaseController : Controller
+    /// <summary>
+    /// Template Method Design Pattern
+    /// to create superclass of other Controllers
+    /// </summary>
+    public abstract class BaseController : Controller
     {
+        private readonly ICompositeViewEngine _viewEngine;
+
+        protected BaseController(ICompositeViewEngine viewEngine)
+        {
+            _viewEngine = viewEngine;
+        }
+
+        /// <summary>
+        /// abstracting Index behavior
+        /// </summary>
+        /// <returns></returns>
+        public abstract IActionResult Index();
+
+        /// <summary>
+        /// abstracting Create behavior
+        /// </summary>
+        /// <returns></returns>
+        public abstract IActionResult Create();
+
+        /// <summary>
+        /// Detail Create behavior
+        /// </summary>
+        /// <returns></returns>
+        public abstract IActionResult Detail(int id);
 
         /// <summary>
         /// this method helps to render a partial view into html string.
@@ -17,12 +45,12 @@ namespace Payroll.Controllers.Base
         /// <param name="viewName"></param>
         /// <param name="model"></param>
         /// <returns></returns>
-        public string RenderPartialViewToString(ICompositeViewEngine viewEngine, string viewName)
+        public string RenderPartialViewToString(string viewName)
         {
             viewName = viewName ?? ControllerContext.ActionDescriptor.ActionName;
             using (StringWriter sw = new StringWriter())
             {
-                IView view = viewEngine.FindView(ControllerContext, viewName, false).View;
+                IView view = _viewEngine.FindView(ControllerContext, viewName, false).View;
                 ViewContext viewContext = new ViewContext(ControllerContext, view, ViewData, TempData, sw, new HtmlHelperOptions());
                 view.RenderAsync(viewContext).Wait();
                 return sw.GetStringBuilder().ToString();
