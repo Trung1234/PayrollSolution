@@ -6,13 +6,14 @@ MVC Web Application  using .NET Core 2.2
  - Creating PDF using RotativaCore version 2.2
       -  Copy folder WkHtmlToPdf to Payroll 
       -  Copy to Payroll.csproj
-			 <ItemGroup>
-				<None Update="WkHtmlToPdf\wkhtmltoimage.exe">
-					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-				</None>
-				<None Update="WkHtmlToPdf\wkhtmltopdf.exe">
-					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-				</None></ItemGroup>
+	<ItemGroup>
+		<None Update="WkHtmlToPdf\wkhtmltoimage.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="WkHtmlToPdf\wkhtmltopdf.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 # To run web
  - Change DefaultConnection to your Connection Strings
  - For database migration , we need to follow the following steps.
