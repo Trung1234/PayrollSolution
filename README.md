@@ -16,7 +16,7 @@ MVC Web Application  using .NET Core 2.2
 					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 				</None>
 			</ItemGroup>
-	 	</details>
+	 	
 	
 # To run web
  - Change DefaultConnection to your Connection Strings
