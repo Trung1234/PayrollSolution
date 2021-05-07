@@ -33,7 +33,7 @@ namespace Payroll.Controllers.Base
         public abstract IActionResult Create();
 
         /// <summary>
-        /// Detail Create behavior
+        /// abstracting Detail behavior
         /// </summary>
         /// <returns></returns>
         public abstract IActionResult Detail(int id);
