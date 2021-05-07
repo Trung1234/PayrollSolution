@@ -41,9 +41,7 @@ namespace Payroll.Controllers.Base
         /// <summary>
         /// this method helps to render a partial view into html string.
         /// </summary>
-        /// <param name="viewEngine"></param>
         /// <param name="viewName"></param>
-        /// <param name="model"></param>
         /// <returns></returns>
         public string RenderPartialViewToString(string viewName)
         {
