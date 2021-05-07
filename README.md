@@ -6,8 +6,6 @@ MVC Web Application  using .NET Core 2.2
  - Creating PDF using RotativaCore version 2.2
       -  Copy folder WkHtmlToPdf to Payroll 
       -  Copy to Payroll.csproj
-      		<details>
-    			<summary>Click to expand</summary>
 			<ItemGroup>
 				<None Update="WkHtmlToPdf\wkhtmltoimage.exe">
 					<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
