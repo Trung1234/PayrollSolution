@@ -43,7 +43,7 @@ namespace Payroll.Controllers.Base
         /// </summary>
         /// <param name="viewName"></param>
         /// <returns></returns>
-        public string RenderPartialViewToString(string viewName)
+        protected string RenderPartialViewToString(string viewName)
         {
             viewName = viewName ?? ControllerContext.ActionDescriptor.ActionName;
             using (StringWriter sw = new StringWriter())
@@ -59,7 +59,7 @@ namespace Payroll.Controllers.Base
         /// This method helps to get the error information from the MVC "ModelState".
         /// </summary>
         /// <returns></returns>
-        public Dictionary<string, object> GetErrorsFromModelState()
+        protected Dictionary<string, object> GetErrorsFromModelState()
         {
             var errors = new Dictionary<string, object>();
             foreach (var key in ModelState.Keys)

@@ -17,8 +17,8 @@ CreateNewEmployee = form => {
                     //$('#modalContent').text(res.message);
                 }
                 else {
-                    // Problem happend during the validation, display
-                    // message related to the field.
+                    // Problem happend during the validation, 
+                    // display message related to the field.
                     if (res.errors != null) {
                         for (const [key, value] of Object.entries(res.errors)) {
                             if (value != null) {
@@ -67,7 +67,6 @@ function showDeletePopup(emplId) {
 }
 function deleteEmployee(emplId) {
     $('.modal-body').empty();
-    $("#form-modal").modal('hide');
     var formData = new FormData();
     formData.append("Id", emplId );
     try {
@@ -79,8 +78,6 @@ function deleteEmployee(emplId) {
             contentType: false,
             processData: false,
             success: function (res) {
-                $('#form-modal').modal('toggle');
-                $('#modalLabel').text('Delete');
                 $('.modal-body').append('<p id="modalContent">' + res.message + '</p>')
             },
             error: function (err) {

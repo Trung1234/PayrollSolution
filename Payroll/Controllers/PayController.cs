@@ -31,6 +31,7 @@ namespace Payroll.Controllers
             _taxService = taxService;
             _nationalInsuranceContributionService = nationalInsuranceContributionService;
         }
+
         public override IActionResult Index()
         {
             var payRecords = _payComputationService.GetAll().Select(pay => new PaymentRecordIndexViewModel
