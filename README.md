@@ -2,6 +2,7 @@
 MVC Web Application  using .NET Core 2.2
  - Server-Side Validation using Regular Expression, Ajax, Jquery
  - Implement multi-layered architecture and their dependencies on each other 
+ - Apply Open / Closed principle (OCP) for BaseController
  - Use Template Method Design Pattern to create superclass for other controllers
  - Use ICompositeViewEngine to render PartialView to string and add in PopUp
  - Creating PDF using RotativaCore version 2.2
