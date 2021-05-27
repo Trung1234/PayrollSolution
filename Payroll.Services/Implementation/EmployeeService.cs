@@ -76,12 +76,6 @@ namespace Payroll.Services.Implementation
             return studentLoanAmount;
         }
 
-        public decimal UnionFee(int id)
-        {
-            var employee = GetById(id);
-            return employee.UnionMember == UnionMember.Yes ? 10m : 0m;
-        }
-
         public IEnumerable<SelectListItem> GetAllEmployeesForPayroll()
         {
             return GetAll().Select(emp => new SelectListItem()

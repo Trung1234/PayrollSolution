@@ -29,17 +29,26 @@ namespace Payroll.Controllers
 
         public override IActionResult Index()
         {
-            List<EmployeeDisplayViewModel> employees = _employeeService.GetAll().Select(employee => new EmployeeDisplayViewModel
+            ViewBag.ErrorMessage = "";
+            List<EmployeeDisplayViewModel> employees;
+            try
             {
-                Id = employee.Id,
-                City = employee.City,
-                DateJoined = employee.DateJoined,
-                Designation = employee.Designation,
-                EmployeeNo = employee.EmployeeNo,
-                FullName = employee.FullName,
-                Gender = employee.Gender,
-                ImageUrl = employee.ImageUrl
-            }).ToList();
+                employees = _employeeService.GetAll().Select(employee => new EmployeeDisplayViewModel
+                {
+                    Id = employee.Id,
+                    City = employee.City,
+                    DateJoined = employee.DateJoined,
+                    Designation = employee.Designation,
+                    EmployeeNo = employee.EmployeeNo,
+                    FullName = employee.FullName,
+                    Gender = employee.Gender,
+                    ImageUrl = employee.ImageUrl
+                }).ToList();
+            }catch(Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                employees = new List<EmployeeDisplayViewModel>();
+            }           
             return View(employees);
         }
 

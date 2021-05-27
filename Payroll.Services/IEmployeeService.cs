@@ -14,7 +14,6 @@ namespace Payroll.Services
         Task UpdateAsync(Employee employee);
         Task UpdateAsync(int id);
         Task DeleteAsync(int employeeId);
-        decimal UnionFee(int id);
         decimal StudentLoanRepaymentAmount(int id, decimal totalAmount);
         IEnumerable<Employee> GetAll();
         IEnumerable<SelectListItem> GetAllEmployeesForPayroll();
