@@ -27,3 +27,5 @@ MVC Web Application  using .NET Core 2.2
 - https://gist.github.com/tanveery/94260e1eeace704797f7#file-homecontroller-cs-L30
 - https://www.codeproject.com/Articles/216439/Data-Validation-Using-Annotations-for-jQuery-Ajax
 - https://www.c-sharpcorner.com/article/enable-ajax-loader-in-asp-net-mvc/
+- ### Migrate SQL Server Database To Azure SQL Server: 
+https://www.c-sharpcorner.com/article/migrate-a-sql-server-database-to-azure-sql-server/
