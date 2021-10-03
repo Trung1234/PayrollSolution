@@ -3,7 +3,7 @@ MVC Web Application  using .NET Core 2.2 and SQL Server 2019
  - Server-Side Validation using Regular Expression, Ajax, Jquery
  - Implement multi-layered architecture and their dependencies on each other 
  - Apply Open / Closed principle (OCP) for BaseController
- - Use Template Method Design Pattern to create superclass for other controllers
+ - Use Template Method Design Pattern to create superclass for other controllers : https://github.com/Trung1234/PayrollSolution/blob/main/Payroll/Controllers/Base/BaseController.cs
  - Use ICompositeViewEngine to render PartialView to string and add in PopUp
  - Creating PDF using RotativaCore version 2.2
       -  Copy folder WkHtmlToPdf to Payroll 
