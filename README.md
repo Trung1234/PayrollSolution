@@ -18,6 +18,7 @@ MVC Web Application  using .NET Core 2.2 and SQL Server 2019
 	- Since our database doesn't exist yet, it will be created for us before the migration is applied
 ## References
 - https://www.c-sharpcorner.com/article/managing-data-with-viewmodel-in-asp-net-mvc/
+- https://coderwall.com/p/cibprg/basecontroller-in-asp-net-mvc
 - https://www.c-sharpcorner.com/UploadFile/3d39b4/Asp-Net-mvc-server-side-validation/
 - https://hoc5.blogspot.com/2017/07/phan-biet-viewbag-viewdata-tempdata.html
 - https://techmaster.vn/posts/36427/quy-uoc-dat-ten-css-theo-chuan-bem
