@@ -5,7 +5,7 @@ MVC Web Application  using .NET Core 2.2 ,Entity Framework Core Code First,and S
  - Apply Open / Closed principle (OCP) for BaseController
  - Use Template Method Design Pattern to create superclass for other controllers : https://github.com/Trung1234/PayrollSolution/blob/main/Payroll/Controllers/Base/BaseController.cs
  - Use ICompositeViewEngine to render PartialView to string and add in PopUp.
- - Use Async Await to make asynchronous process save image and create employee
+ - Use Async Await to make asynchronous process of saving image and creating employee
  - Creating PDF using RotativaCore version 2.2
       -  Copy folder WkHtmlToPdf to Payroll 
       -  Copy to section ItemGroup of WkHtmlToPdf to Payroll.csproj 	 	
