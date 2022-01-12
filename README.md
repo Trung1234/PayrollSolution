@@ -1,6 +1,7 @@
 # Payroll Solution
 MVC Web Application  using .NET Core 2.2 ,Entity Framework Core Code First,and SQL Server 2019
  - Server-Side Validation using Regular Expression, Ajax, Jquery
+ https://github.com/Trung1234/PayrollSolution/blob/main/Payroll/wwwroot/js/site.js
  - Implement multi-layered architecture and their dependencies on each other 
  - Apply Open / Closed principle (OCP) and Liskov Substitution Principle 
 for BaseController
